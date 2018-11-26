@@ -3,7 +3,6 @@
 			<title>CSS Template</title>
 			<meta charset="utf-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
 	<body>
 		<script src="js/app.js"></script>
 		<div class="container" id="main">
@@ -15,8 +14,9 @@
 		<a href="https://fsmedia.imgix.net/33/ac/78/c3/b6cf/4353/9bd5/8d73309ecf41/hqgn8mhlnroyjpg.jpeg?dpr=2&auto=format%2Ccompress&w=650">
 			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9m4MWXpOUuzPhu1a6Rs0YvKfEfHD6I1VDj3LF6pOWVTc2Mji8" alt="Rocket" style="width:100px;height:100px">
 		</a>
+		<div></div>
 		<button type="button" onclick="alert('SEND IT')">UNREAD</button>
-		<button type="submit" onclick="alert('GOOD JOB')">READ</button>
+		<button type="submit" onclick="alert('YOU GET A COOKIE')">READ</button>
 	</header>
 	<section>
 		<nav>
@@ -27,7 +27,7 @@
 				<li><a href="https://www.devleague.com/">Important</a></li>
 				<li><a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Elon News</a></li>
 				<li><a href="https://giphy.com/explore/images">Vics Jokes</a></li>
-				<li><a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Trump Tweets</a></li>
+				<li><a href="https://twitter.com/realDonaldTrump?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Funny Tweets</a></li>
 				<li><a href="https://www.youtube.com/watch?v=WIrWyr3HgXI">Sending It</a></li>
 			</ul>
 		</nav>
@@ -46,38 +46,31 @@
 						<td><p class="show">Sender</p></td>
 						<td><p class="show">Subject</p></td>
 						<td><p class="show">Date</p></td>
-						<td><p class="show">message</p></td>
+						<td><p class="show">Message</p></td>
 					</tr>
 					</table>
+						</script>
 					</div>
-					<script>
-					// current time using Date -getMinutes() and getHours()
-					window.onload = function(){
-					// ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-					// We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-					var pElem = document.getElementsByClassName("show"); 
-					for(var i = 0; i<pElem.length; i++){
-					pElem[i].addEventListener('click', showInside)
-					}; 
-					function showInside(){
-					console.log(this.innerHTML)
-					}
-					var youGotMailCount = window.geemails.length; 
-					console.log(youGotMailCount); 
-
-					var anything = 'proof it works'; 
-					console.log(anything);
-					//var count = document.createElement('div'); 
-					//count.id = 'count'; 
-					//count.innerHTML = youGotMailCount; 
-					//mailCount.appendChild(count); 
-					}
-					</script>
 		</article>
 	</section>
 		<footer>
 			<p>ELON FOR PRESIDENT</p>
 		</footer>
-		</body>
-	</head>
+		<script>
+			window.onload = function(){
+			// ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
+			// We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+
+			var anything = 'proof it works'; 
+			console.log(anything);
+
+			var getGeeCount = window.geemails.length; 
+			var number = document.createElement('div');
+			number.id ='number';
+			number.innerHTML = getGeeCount; 
+			getGeeCount.appendChild(number); 
+			}
+		</script>
+	</body>
+</head>
 </html>
