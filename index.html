@@ -8,24 +8,6 @@
 			</div>
 			<script src="js/mail-generator.js"></script>
 			<link href="css/style.css" rel="stylesheet" media="screen">
-			<script>
-				window.onload = function(){
-				// ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-				// We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-
-				console.log(geemails); 
-
-				for (var i = 0; i<window.geemails.length; i++){
-				var count = document.createElement('div');
-				count.id ='count';
-				count.innerHTML = geemails[i]; 
-				//geemails.appendChild(count); 
-				}
-
-
-				}
-			</script>
-	</head>
 	<body>
 	<header>
 		<a href="https://fsmedia.imgix.net/33/ac/78/c3/b6cf/4353/9bd5/8d73309ecf41/hqgn8mhlnroyjpg.jpeg?dpr=2&auto=format%2Ccompress&w=650">
@@ -33,7 +15,6 @@
 		</a>
 		<div></div>
 		<button type="button" onclick="alert('SEND IT')">UNREAD</button>
-		<button type="submit" onclick="alert('YOU GET A COOKIE')">READ</button>
 	</header>
 	<section>
 		<nav>
@@ -50,7 +31,8 @@
 		</nav>
 		<article>
 			<div class="w3-container">
-					<h1>Messages</h1>
+					<button onclick="click()">Messages</button>
+					<p id="myBtn"></p>
 					<div class="w3-responsive">
 					<table class="w3-table-all">
 					<tr>
@@ -72,5 +54,45 @@
 		<footer>
 			<p>ELON FOR PRESIDENT</p>
 		</footer>
+		<script>
+				window.onload = function(){
+				// ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
+				// We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+
+				function click() {
+					var getMailCount = window.geemails.length;
+					var count = getMailCount.length; 
+					document.getElementById("myBtn").innerHTML = count;
+				}; 
+				//function click() {
+					//var getMailCount = window.geemails.length; 
+					//var count = document.getElementById("myBtn")
+					//document.createElement('div'); 
+					//count.id = 'count'; 
+					//myBtn.innerHTML = getMailCount; 
+					//mailCount.appendChild(count); 
+					//document.getElementById("myBtn").innerHTML = geemails;
+				//for (var i=0; i<geemails.length; i++){
+					//console.log(geemails);
+					//myBtn.innerHTML = geemails;
+				//document.getElementById("myBtn").addEventListner("click", )
+				
+				//function displayMessages() {
+					//document.getElementById("send").innerHTML = geemails;
+				//};
+
+				//console.log(geemails); 
+
+				//for (var i = 0; i<window.geemails.length; i++){
+				//var count = document.createElement('div');
+				//count.id ='count';
+				//count.innerHTML = geemails[i]; 
+				//}
+
+				//console.log(window.geemails)
+
+				}
+			</script>
+	</head>
 	</body>
 </html>
